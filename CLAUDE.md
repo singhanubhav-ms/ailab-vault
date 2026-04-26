@@ -48,15 +48,15 @@ Do NOT read the wiki for general coding questions or things already in this proj
 
 ## Plugin Skills
 
-| Skill | Trigger |
-|-------|---------|
-| `/wiki` | Setup, scaffold, route to sub-skills |
-| `ingest [source]` | Single or batch source ingestion |
-| `query: [question]` | Answer from wiki content |
-| `lint the wiki` | Health check |
-| `/save` | File the current conversation as a structured wiki note |
+| Skill                   | Trigger                                                   |
+| ----------------------- | --------------------------------------------------------- |
+| `/wiki`                 | Setup, scaffold, route to sub-skills                      |
+| `ingest [source]`       | Single or batch source ingestion                          |
+| `query: [question]`     | Answer from wiki content                                  |
+| `lint the wiki`         | Health check                                              |
+| `/save`                 | File the current conversation as a structured wiki note   |
 | `/autoresearch [topic]` | Autonomous research loop: search, fetch, synthesize, file |
-| `/canvas` | Visual layer: add images, PDFs, notes to Obsidian canvas |
+| `/canvas`               | Visual layer: add images, PDFs, notes to Obsidian canvas  |
 
 ## MCP (Optional)
 
