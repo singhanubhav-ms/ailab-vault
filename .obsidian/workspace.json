@@ -11,14 +11,14 @@
             "id": "7d2211ec44b118cf",
             "type": "leaf",
             "state": {
-              "type": "split-diff-view",
+              "type": "markdown",
               "state": {
-                "aFile": "wiki/index.md",
-                "bFile": "wiki/index.md",
-                "aRef": ""
+                "file": "ATTRIBUTION.md",
+                "mode": "source",
+                "source": false
               },
-              "icon": "diff",
-              "title": "Diff: index  (Working Tree)"
+              "icon": "lucide-file",
+              "title": "ATTRIBUTION"
             }
           }
         ]
@@ -204,6 +204,9 @@
   },
   "active": "7d2211ec44b118cf",
   "lastOpenFiles": [
+    "CHANGELOG.md",
+    "CLAUDE.md",
+    "ATTRIBUTION.md",
     "2026-04-26.md",
     "wiki/index.md",
     "README.md",
