@@ -1,7 +1,7 @@
 ---
 type: meta
 title: "Operation Log"
-updated: 2026-04-08
+updated: 2026-04-26
 tags:
   - meta
   - log
@@ -24,6 +24,13 @@ Entry format: `## [YYYY-MM-DD] operation | Title`
 Parse recent entries: `grep "^## \[" wiki/log.md | head -10`
 
 ---
+
+## [2026-04-26] ops | Lighthouse runtime context cleanup
+- Type: runtime metadata cleanup
+- Locations (modified): `wiki/hot.md`, `wiki/index.md`, `wiki/overview.md`, `wiki/log.md`
+- Scope: replaced stale DragonScale-centric hot cache with Lighthouse runtime state; added a current runtime section to the index; rewrote the overview away from the demo-vault framing; recorded that `wiki-lint-weekly` is installed and that `vm-ailab` now supports key-based SSH via `ssh vm-ailab`
+- Validation: researcher answers current-focus and operator-path questions from `wiki/hot.md`; cron exists as `wiki-lint-weekly` with Sunday 08:00 Asia/Kolkata schedule
+- Note: older claude-obsidian and DragonScale entries below remain unchanged as historical archive and should not be treated as the active project context unless explicitly requested
 
 ## [2026-04-24] save | v1.6.0 public release notes (Teams, Karpathy-style)
 - Type: release doc + visual assets

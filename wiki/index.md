@@ -1,11 +1,11 @@
 ---
 type: meta
-title: Wiki Index
+title: "Wiki Index"
 updated: 2026-04-26
 tags:
   - meta
   - index
-status: evergreen
+status: current
 related:
   - "[[overview]]"
   - "[[log]]"
@@ -23,9 +23,21 @@ related:
 
 # Wiki Index
 
-Last updated: 2026-04-15 | Total pages: 34 | Sources ingested: 2
+Last updated: 2026-04-26 | Total pages: 46 | Sources ingested: 2
 
 Navigation: [[overview]] | [[log]] | [[hot]] | [[dashboard]] | [[Wiki Map]] | [[getting-started]]
+
+---
+
+## Current Runtime Context
+
+This vault is now being used for the Lighthouse AI lab runtime. Older claude-obsidian and DragonScale entries below are retained as archival context unless a question explicitly asks about that earlier plugin-development history.
+
+- Runtime: OpenClaw on the Azure VM inside WSL Ubuntu 24.04
+- Human entrypoints: Discord and CLI
+- Validated agent path: `researcher` on `azure/gpt-5.4-mini`
+- Operator path: `ssh vm-ailab` using the dedicated local SSH key
+- Scheduled maintenance: `wiki-lint-weekly` every Sunday at 08:00 Asia/Kolkata
 
 ---
 

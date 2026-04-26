@@ -2,11 +2,12 @@
 type: overview
 title: "Wiki Overview"
 created: 2026-04-07
-updated: 2026-04-07
+updated: 2026-04-26
 tags:
   - meta
   - overview
-status: developing
+  - lighthouse
+status: current
 related:
   - "[[index]]"
   - "[[hot]]"
@@ -24,47 +25,37 @@ Navigation: [[index]] | [[hot]] | [[log]] | [[dashboard]]
 
 ## Purpose
 
-This is the claude-obsidian demo vault. It demonstrates the [[LLM Wiki Pattern]] — a system for building persistent, compounding knowledge bases using Claude and Obsidian.
+This is the working vault for Lighthouse, Anubhav's personal AI lab. It is the shared memory layer used by OpenClaw agents on the VM and the human editing surface in Obsidian on the Mac.
 
-Run `/wiki` to scaffold this vault for your own domain and replace this overview.
-
----
-
-## Current Seed Content
+## Current Operating Model
 
 
-**Concepts seeded:**
-- [[LLM Wiki Pattern]] — the core architecture
-- [[Hot Cache]] — session context mechanism
-- [[Compounding Knowledge]] — why the pattern works
+- The Mac clone of `ailab-vault` is opened in Obsidian for human editing and browsing.
+- The VM clone of `ailab-vault` is the working copy used by OpenClaw agents.
+- GitHub is the sync point between those two clones.
+- Discord and the CLI are the active human entrypoints for v1.
 
-**Entities seeded:**
-- [[Andrej Karpathy]] — originated the pattern
-
-**Sources seeded:**
-- [[claude-obsidian-ecosystem-research]] — 16+ projects, 13 cherry-picks identified (2026-04-08)
-
----
 
 ## Current State
 
-- Sources ingested: 2
-- Wiki pages: 26
-- Last activity: 2026-04-08 (v1.4.1 shipped, release session filed)
+- OpenClaw is live on the Azure VM inside WSL Ubuntu 24.04.
+- The current validated agent path is `researcher` on `azure/gpt-5.4-mini`.
+- `wiki-lint-weekly` is installed as the weekly maintenance cron job.
+- The hot cache has been refreshed for Lighthouse-specific runtime context.
+- Older claude-obsidian and DragonScale material remains in the vault as archival history.
 
----
 
-## Canvases
+## Important Files
 
-- [[claude-obsidian-presentation]] — Full presentation: hero, overview, skills, architecture, Wiki vs RAG, visual demos (2026-04-07)
-- [[AI Marketing Hub Cover Images Canvas]] — Cover image library for AI Marketing Hub brand assets
+- [[hot]] — first-stop cached runtime context
+- [[index]] — current map of the vault
+- [[log]] — append-only operational history
 
----
 
 ## Key Themes
 
-**Knowledge compounds.** Unlike RAG, the wiki pre-compiles synthesis. Cross-references are already there. Contradictions are flagged. Every ingest enriches existing pages rather than adding isolated chunks.
+**The vault is the durable memory layer.** OpenClaw agents use it for persistent context, reports, and operational state.
 
-**The hot cache is the force multiplier.** A ~500-word file captures recent context. New sessions start with full context at minimal token cost.
+**Obsidian is the human UI.** The Mac clone is for browsing, backlinks, graph view, and manual editing. It is not the agent runtime.
 
-**Obsidian is the IDE, Claude is the programmer.** The graph view shows what's connected. The human curates sources and asks questions. Claude writes and maintains everything else.
+**Historical plugin-development content still exists.** Treat older claude-obsidian and DragonScale notes as archive unless a question explicitly asks for that history.
