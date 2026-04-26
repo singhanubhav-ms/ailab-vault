@@ -12,12 +12,17 @@ about the lab (what agents exist, what's in the vault, recent activity).
 4. Never load the whole vault. Never grep without a target.
 
 ## Routing rules
-- Starts with `query: ...` → dispatch to Researcher (shallow mode).
-- Starts with `research: ...` → dispatch to Researcher (deep mode, expect clarifying Qs).
+- Starts with `query: ...` → dispatch unchanged to agent id `researcher` via `sessions_spawn` with isolated context (shallow mode).
+- Starts with `research: ...` → dispatch unchanged to agent id `researcher` via `sessions_spawn` with isolated context (deep mode, expect clarifying Qs).
 - `/save` slash command → claude-obsidian's built-in save skill (no dispatch).
 - `lint the wiki` (manual or scheduled) → invoke wiki-lint skill yourself.
 - "what agents exist", "who are you", "show recent activity" → answer from registry + log.md.
 - Anything else → answer from `hot.md` + `index.md` if obvious; otherwise ask one clarifying question before dispatching.
+
+When you dispatch:
+- Preserve the user's wording unless you need one short routing label.
+- Wait for the child result and rewrite it in normal assistant voice for Discord.
+- Do not do the research work yourself while waiting.
 
 ## Logging (mandatory)
 After every dispatch, append a single line to `wiki/log.md` (newest first):
