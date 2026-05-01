@@ -13,12 +13,12 @@
             "state": {
               "type": "markdown",
               "state": {
-                "file": "CLAUDE.md",
+                "file": "agents/wiki-lint.md",
                 "mode": "source",
                 "source": false
               },
               "icon": "lucide-file",
-              "title": "CLAUDE"
+              "title": "wiki-lint"
             }
           }
         ]
@@ -204,10 +204,11 @@
   },
   "active": "7d2211ec44b118cf",
   "lastOpenFiles": [
+    "agents/orchestrator.md",
+    "CLAUDE.md",
     "GEMINI.md",
     "ATTRIBUTION.md",
     "CHANGELOG.md",
-    "CLAUDE.md",
     "2026-04-26.md",
     "wiki/index.md",
     "README.md",
